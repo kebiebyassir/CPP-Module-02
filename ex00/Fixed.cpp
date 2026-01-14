@@ -1,12 +1,12 @@
 #include "Fixed.hpp"
 
-// Default constructor
+const int Fixed::fractional_bits = 8;
+
 Fixed::Fixed() : fixed_point(0)
 {
 	std::cout << "Default constructor called" << std::endl;
 }
 
-//
 Fixed::Fixed(const Fixed& other)
 {
 	std::cout << "Copy constructor called" << std::endl;
